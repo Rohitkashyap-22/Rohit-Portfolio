@@ -1,46 +1,60 @@
 // src/components/Projects.js
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiX, FiCalendar } from 'react-icons/fi';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiGithub, FiExternalLink, FiX, FiCalendar } from "react-icons/fi";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
     {
-      title: 'VidyaSetu',
+      title: "Real-Time Chat Application",
       description: [
-        'Implemented secure login/signup with Google OAuth 2.0 for authentication using JWT and Bcrypt.',
-        'Integrated a dynamic timetable system, allowing students to view schedules and mark attendance, while admins manage updates.',
-        'Built an interactive academic dashboard featuring a deadline calendar and results declaration.',
-        'Built a real-time chat system using Socket.IO with document sharing, enhancing collaboration across study groups and project teams.'
+        "Developed a real-time messaging application enabling private and group conversations with instant updates powered by Socket.IO.",
+        "Engineered secure login, session handling, and role-based access through JWT authentication and bcrypt password hashing.",
+        "Structured and optimized MongoDB collections with Mongoose to store users, chats, and message history efficiently.",
+        "Developed RESTful APIs for user, chat, and message operations, ensuring modular and scalable backend architecture.",
+        "Created a responsive and modern UI with React and MUI for seamless cross-device usage.",
+        "Delivered an intuitive, mobile-friendly interface using React and MUI, enhancing overall user experience.",
       ],
-      tech: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Socket.io'],
-      github: 'https://github.com/anupamkush2003/vidyaSetu',
-      live: '',
-      image: '/images/vidyaSetu-screenshot.png', // You can replace this with actual screenshot
-      period: 'Dec 2024 - Jun 2025',
-      gradient: 'from-blue-500 to-cyan-500'
+      tech: ["MERN Stack", "Socket.IO", "JWT", "REST APIs"],
+      github: "https://github.com/Rohitkashyap-22/Chat-App.git",
+      live: "https://chat-app-derl.onrender.com",
+      image: "/images/chat-app-screenshot.png",
+      period: "Nov 2024 - Dec 2024",
+      gradient: "from-purple-500 to-pink-500",
     },
     {
-      title: 'RecycleHub',
+      title: "Job Portal Application",
       description: [
-        'Developed a responsive web app for scrap pickup scheduling, enabling users to book services and dealers to manage requests and generate PDF invoices—boosting efficiency.',
-        'Developed Google login and email OTP verification for user authentication and password recovery.',
-        'Designed a multi-profile management system for admins, dealers, and customers, ensuring role-specific access and functionalities using React-Redux.',
-        'Integrated Razorpay payment gateway for dealers to pay securely, track subscription status, and choose between 6- or 12-month plans—streamlining monetization.'
+        "Developed a full-stack, role-based job platform using React, enabling seamless job discovery, application tracking, and recruitment management.",
+        "Implemented secure authentication & authorization with Clerk (multi-session support + protected API routes).",
+        "Designed a normalized relational database in Supabase (PostgreSQL) to handle complex relationships among users, profiles, jobs, and applications.",
+        "Built core features: dynamic search/filters, CRUD operations, saved jobs system, ensuring responsive and engaging user experience.",
+        "Delivered a modern, accessible UI with React, Tailwind CSS, and shadcn/ui.",
       ],
-      tech: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
-      github: 'https://github.com/anupamkush2003/recycleHub',
-      live: '',
-      image: '/images/recycleHub-screenshot.png', // You can replace this with actual screenshot
-      period: 'Nov 2024 - Dec 2024',
-      gradient: 'from-green-500 to-emerald-500'
-    }
+      tech: [
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "Supabase",
+        "Tailwind CSS",
+        "Clerk",
+        "shadcn/ui",
+      ],
+      github: "https://github.com/Rohitkashyap-22/Job-Portal.git",
+      live: "https://job-portal-seven-mocha.vercel.app/",
+      image: "/images/job-portal-screenshot.png",
+      period: "July 2025 - Aug 2025",
+      gradient: "from-blue-500 to-cyan-500",
+    },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/30 relative overflow-hidden">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/30 relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -57,7 +71,9 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent mb-4">
             My Projects
           </h2>
-          <p className="text-gray-400 text-lg">Things I've built with passion</p>
+          <p className="text-gray-400 text-lg">
+            Things I've built with passion
+          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -74,10 +90,13 @@ const Projects = () => {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300">
                 {/* Project Image */}
                 <div className="relative h-48 overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-20`}></div>
-                  {/* You can replace this div with actual project screenshot when available */}
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-20`}
+                  ></div>
                   <div className="w-full h-full bg-gray-800 flex items-center justify-center">
-                    <div className="text-4xl font-bold text-white/30">{project.title.charAt(0)}</div>
+                    <div className="text-4xl font-bold text-white/30">
+                      {project.title.charAt(0)}
+                    </div>
                   </div>
                 </div>
 
@@ -94,17 +113,22 @@ const Projects = () => {
                   </div>
 
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, i) => (
+                    {project.tech.slice(0, 4).map((tech, i) => (
                       <span
                         key={i}
-                        className="bg-white/10 px-3 py-1 rounded-full text-sm text-gray-300 border border-white/10"
+                        className="bg-white/10 px-3 py-1 rounded-full text-xs text-gray-300 border border-white/10"
                       >
                         {tech}
                       </span>
                     ))}
+                    {project.tech.length > 4 && (
+                      <span className="bg-white/10 px-3 py-1 rounded-full text-xs text-gray-300 border border-white/10">
+                        +{project.tech.length - 4} more
+                      </span>
+                    )}
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 text-sm">
                     <a
                       href={project.github}
                       target="_blank"
@@ -115,6 +139,18 @@ const Projects = () => {
                       <FiGithub />
                       Code
                     </a>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-2 text-gray-400 hover:text-green-400 transition-colors"
+                      >
+                        <FiExternalLink />
+                        Live
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -152,7 +188,7 @@ const Projects = () => {
                     <h3 className="text-2xl font-bold text-white mb-2">
                       {selectedProject.title}
                     </h3>
-                    <div className="flex items-center gap-4 text-gray-400">
+                    <div className="flex items-center gap-4 text-gray-400 text-sm">
                       <div className="flex items-center gap-2">
                         <FiCalendar />
                         <span>{selectedProject.period}</span>
@@ -162,17 +198,24 @@ const Projects = () => {
 
                   {/* Modal Content */}
                   <div className="p-6">
-                    <h4 className="text-lg font-semibold text-white mb-4">Project Details</h4>
+                    <h4 className="text-lg font-semibold text-white mb-4">
+                      Key Features
+                    </h4>
                     <ul className="space-y-3 mb-6">
                       {selectedProject.description.map((desc, i) => (
-                        <li key={i} className="flex items-start gap-3 text-gray-300">
+                        <li
+                          key={i}
+                          className="flex items-start gap-3 text-gray-300"
+                        >
                           <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                           <span>{desc}</span>
                         </li>
                       ))}
                     </ul>
 
-                    <h4 className="text-lg font-semibold text-white mb-4">Technologies Used</h4>
+                    <h4 className="text-lg font-semibold text-white mb-4">
+                      Technologies Used
+                    </h4>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {selectedProject.tech.map((tech, i) => (
                         <span
@@ -184,12 +227,12 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-4">
                       <a
                         href={selectedProject.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-semibold text-white transition-colors"
+                        className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 px-6 py-3 rounded-xl font-semibold text-white transition-all shadow-lg"
                       >
                         <FiGithub />
                         View Code
@@ -199,7 +242,7 @@ const Projects = () => {
                           href={selectedProject.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 bg-green-500 hover:bg-green-600 px-6 py-3 rounded-xl font-semibold text-white transition-colors"
+                          className="flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 px-6 py-3 rounded-xl font-semibold text-white transition-all shadow-lg"
                         >
                           <FiExternalLink />
                           Live Demo

@@ -6,17 +6,19 @@ import { FiAward, FiCode } from 'react-icons/fi';
 const Achievements = () => {
   const achievements = [
     {
-      title: 'Aviskar 2k24 - 2nd Runner Up',
-      description: 'Secured 2nd runner-up position in Dev or Die for developing RecycleHub, a responsive scrap-pickup web application with role-based access control, Razorpay payment integration, enabling efficient service booking and request management.',
+      title: "Qualified JEE Advanced and Mains",
+      description:
+        "Secured AIR 19,317 IN JEE Advanced and AIR 16,924 IN JEE Mains",
       icon: <FiAward className="text-2xl" />,
-      gradient: 'from-yellow-500 to-orange-500'
+      gradient: "from-yellow-500 to-orange-500",
     },
     {
-      title: '1000+ Problems Solved',
-      description: 'Solved 1000+ questions across all coding platforms including LeetCode, GeeksforGeeks, and CodeChef, demonstrating strong problem-solving skills and algorithmic thinking.',
+      title: "150+ Problems Solved",
+      description:
+        "Solved 150+ questions across all coding platforms including LeetCode and GeeksforGeeks demonstrating strong problem-solving skills and algorithmic thinking.",
       icon: <FiCode className="text-2xl" />,
-      gradient: 'from-green-500 to-emerald-500'
-    }
+      gradient: "from-green-500 to-emerald-500",
+    },
   ];
 
   return (

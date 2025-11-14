@@ -21,10 +21,20 @@ const Header = () => {
           duration={500}
           className="text-2xl font-bold text-blue-400 hover:text-blue-300 cursor-pointer"
         >
-          Anupam Kushwaha
+          Rohit Kashyap
         </Link>
         <nav className="hidden md:flex space-x-6">
-          {['hero', 'about', 'education', 'projects', 'skills', 'achievements', 'experience', 'coding', 'contact'].map((section) => (
+          {[
+            "hero",
+            "about",
+            "education",
+            "projects",
+            "skills",
+            "achievements",
+            "experience",
+            "coding",
+            "contact",
+          ].map((section) => (
             <Link
               key={section}
               to={section}
@@ -52,7 +62,17 @@ const Header = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-800 border-t border-gray-700">
           <nav className="flex flex-col space-y-4 py-4 px-4">
-            {['hero', 'about', 'education', 'projects', 'skills', 'achievements', 'experience', 'coding', 'contact'].map((section) => (
+            {[
+              "hero",
+              "about",
+              "education",
+              "projects",
+              "skills",
+              "achievements",
+              "experience",
+              "coding",
+              "contact",
+            ].map((section) => (
               <Link
                 key={section}
                 to={section}
@@ -68,7 +88,7 @@ const Header = () => {
               onClick={toggleDarkMode}
               className="text-gray-300 hover:text-white self-start"
             >
-              {darkMode ? 'Light Mode' : 'Dark Mode'}
+              {darkMode ? "Light Mode" : "Dark Mode"}
             </button>
           </nav>
         </div>

@@ -22,32 +22,32 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <FiMail className="text-xl" />,
-      label: 'Email',
-      value: 'anupamkush8031@gmail.com',
-      link: 'mailto:anupamkush8031@gmail.com',
-      color: 'text-purple-400'
+      label: "Email",
+      value: "rohitkashyap2226@gmail.com",
+      link: "mailto:rohitkashyap2226@gmail.com",
+      color: "text-purple-400",
     },
     {
       icon: <FiPhone className="text-xl" />,
-      label: 'Phone',
-      value: '+91-6387998031',
-      link: 'tel:+916387998031',
-      color: 'text-green-400'
+      label: "Phone",
+      value: "+91-8426036535",
+      link: "tel:+918426036535",
+      color: "text-green-400",
     },
     {
       icon: <FiMapPin className="text-xl" />,
-      label: 'Location',
-      value: 'Prayagraj, Uttar Pradesh',
-      link: '#',
-      color: 'text-red-400'
+      label: "Location",
+      value: "Prayagraj, Uttar Pradesh",
+      link: "#",
+      color: "text-red-400",
     },
     {
       icon: <FiGithub className="text-xl" />,
-      label: 'GitHub',
-      value: 'anupamkush2003',
-      link: 'https://github.com/anupamkush2003',
-      color: 'text-gray-400'
-    }
+      label: "GitHub",
+      value: "Rohitkashyap-22",
+      link: "https://github.com/Rohitkashyap-22",
+      color: "text-gray-400",
+    },
   ];
 
   return (
@@ -105,8 +105,8 @@ const Contact = () => {
 
             {/* Download Resume */}
             <motion.a
-              href="/Anupam_20225011.pdf"
-              download="Anupam_Kushwaha_Resume.pdf"
+              href="/Rohit_20225077.pdf"
+              download="Rohit_Kashyap_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 shadow-lg hover:shadow-blue-500/25"

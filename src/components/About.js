@@ -7,7 +7,10 @@ const About = () => {
   const interests = ['Data Structures & Algorithms', 'Web Development', 'Operating Systems', 'Database Management System', 'OOPS Concept'];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-slate-900 via-purple-900/20 to-blue-900/30 relative overflow-hidden">
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-br from-slate-900 via-purple-900/20 to-blue-900/30 relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
@@ -42,46 +45,58 @@ const About = () => {
                 <h3 className="text-2xl font-semibold text-white">Who I Am</h3>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Passionate about building innovative web applications and solving complex problems through code. 
-                Currently pursuing B.Tech in Electrical Engineering at MNNIT Allahabad with a strong foundation 
-                in full-stack development and a love for creating digital solutions.
+                Passionate about building innovative web applications and
+                solving complex problems through code. Currently pursuing B.Tech
+                in Electrical Engineering at MNNIT Allahabad with a strong
+                foundation in full-stack development and a love for creating
+                digital solutions.
               </p>
             </div>
 
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
-              <h4 className="text-xl font-semibold text-white mb-6">Get In Touch</h4>
+              <h4 className="text-xl font-semibold text-white mb-6">
+                Get In Touch
+              </h4>
               <div className="space-y-4">
-                <motion.div 
+                <motion.div
                   whileHover={{ x: 10 }}
                   className="flex items-center gap-4 p-3 rounded-lg hover:bg-white/5 transition-all duration-300"
                 >
                   <div className="p-2 bg-green-500/20 rounded-lg">
                     <FiMapPin className="text-green-400" />
                   </div>
-                  <span className="text-gray-300">Prayagraj, Uttar Pradesh</span>
+                  <span className="text-gray-300">
+                    Prayagraj, Uttar Pradesh
+                  </span>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   whileHover={{ x: 10 }}
                   className="flex items-center gap-4 p-3 rounded-lg hover:bg-white/5 transition-all duration-300"
                 >
                   <div className="p-2 bg-blue-500/20 rounded-lg">
                     <FiPhone className="text-blue-400" />
                   </div>
-                  <a href="tel:+916387998031" className="text-gray-300 hover:text-blue-400 transition-colors">
-                    +91-6387998031
+                  <a
+                    href="tel:+918426036535"
+                    className="text-gray-300 hover:text-blue-400 transition-colors"
+                  >
+                    +91-8426036535
                   </a>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   whileHover={{ x: 10 }}
                   className="flex items-center gap-4 p-3 rounded-lg hover:bg-white/5 transition-all duration-300"
                 >
                   <div className="p-2 bg-purple-500/20 rounded-lg">
                     <FiMail className="text-purple-400" />
                   </div>
-                  <a href="mailto:anupamkush8031@gmail.com" className="text-gray-300 hover:text-purple-400 transition-colors">
-                    anupamkush8031@gmail.com
+                  <a
+                    href="mailto:rohitkashyap2226@gmail.com"
+                    className="text-gray-300 hover:text-purple-400 transition-colors"
+                  >
+                    rohitkashyap2226@gmail.com
                   </a>
                 </motion.div>
               </div>
@@ -94,7 +109,9 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
           >
-            <h3 className="text-2xl font-semibold text-white mb-8 text-center">Areas of Interest</h3>
+            <h3 className="text-2xl font-semibold text-white mb-8 text-center">
+              Areas of Interest
+            </h3>
             <div className="grid gap-4">
               {interests.map((interest, index) => (
                 <motion.div

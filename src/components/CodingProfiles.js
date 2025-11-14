@@ -5,29 +5,21 @@ import { motion } from 'framer-motion';
 const CodingProfiles = () => {
   const profiles = [
     {
-      platform: 'LeetCode',
-      username: 'apmkush',
-      link: 'https://leetcode.com/apmkush/',
-      icon: '/leetcode-icon.png',
-      gradient: 'from-orange-500 to-red-500',
-      description: 'Competitive Programming'
+      platform: "LeetCode",
+      username: "Rohit_Kashyap_2211",
+      link: "https://leetcode.com/Rohit_Kashyap_2211/",
+      icon: "/leetcode-icon.png",
+      gradient: "from-orange-500 to-red-500",
+      description: "Competitive Programming",
     },
     {
-      platform: 'GeeksforGeeks',
-      username: 'apmkushpzlk',
-      link: 'https://auth.geeksforgeeks.org/user/apmkushpzlk',
-      icon: '/gfg icon.jpg',
-      gradient: 'from-green-500 to-emerald-500',
-      description: 'DSA Practice'
+      platform: "GeeksforGeeks",
+      username: "rohitkush22",
+      link: "https://auth.geeksforgeeks.org/user/rohitkush22",
+      icon: "/gfg icon.jpg",
+      gradient: "from-green-500 to-emerald-500",
+      description: "DSA Practice",
     },
-    {
-      platform: 'CodeChef',
-      username: 'apmkush13579',
-      link: 'https://www.codechef.com/users/apmkush13579',
-      icon: '/codechef icon.jpg',
-      gradient: 'from-purple-500 to-pink-500',
-      description: 'Coding Challenges'
-    }
   ];
 
   return (

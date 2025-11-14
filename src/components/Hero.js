@@ -14,14 +14,17 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900/20 to-blue-900/30 text-white py-20 relative overflow-hidden">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900/20 to-blue-900/30 text-white py-20 relative overflow-hidden"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Gradient Orbs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>
       </div>
@@ -38,7 +41,7 @@ const Hero = () => {
             duration: 3,
             delay: element.delay,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         >
           {element.icon}
@@ -62,7 +65,9 @@ const Hero = () => {
               className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-8"
             >
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-gray-300">Available for opportunities</span>
+              <span className="text-sm font-medium text-gray-300">
+                Available for opportunities
+              </span>
             </motion.div>
 
             {/* Main Heading */}
@@ -73,11 +78,11 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <span className="bg-gradient-to-r from-white via-blue-200 to-cyan-200 bg-clip-text text-transparent">
-                Anupam
+                Rohit
               </span>
               <br />
               <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-red-300 bg-clip-text text-transparent">
-                Kushwaha
+                Kashyap
               </span>
             </motion.h1>
 
@@ -88,8 +93,11 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl leading-relaxed"
             >
-              Full-Stack Developer & 
-              <span className="text-cyan-300 font-semibold"> Electrical Engineering </span>
+              Full-Stack Developer &
+              <span className="text-cyan-300 font-semibold">
+                {" "}
+                Electrical Engineering{" "}
+              </span>
               Student at MNNIT Allahabad
             </motion.p>
 
@@ -100,8 +108,9 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="text-lg text-gray-400 mb-12 max-w-2xl leading-relaxed"
             >
-              Passionate about creating digital solutions that blend innovation with functionality. 
-              I transform complex problems into elegant, user-friendly applications.
+              Passionate about creating digital solutions that blend innovation
+              with functionality. I transform complex problems into elegant,
+              user-friendly applications.
             </motion.p>
 
             {/* Stats */}
@@ -112,16 +121,12 @@ const Hero = () => {
               className="flex flex-wrap gap-8 mb-12"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">1000+</div>
+                <div className="text-3xl font-bold text-white mb-2">150+</div>
                 <div className="text-gray-400 text-sm">Problems Solved</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">5+</div>
+                <div className="text-3xl font-bold text-white mb-2">2</div>
                 <div className="text-gray-400 text-sm">Projects</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">1st</div>
-                <div className="text-gray-400 text-sm">Hackathon Win</div>
               </div>
             </motion.div>
 
@@ -144,10 +149,10 @@ const Hero = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
               </Link>
-              
+
               <a
-                href="/Anupam_20225011.pdf"
-                download="Anupam_Kushwaha_Resume.pdf"
+                href="/Rohit_20225077.pdf"
+                download="Rohit_Kashyap_Resume.pdf"
                 className="group flex items-center gap-3 bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-white/10"
               >
                 <FiDownload className="group-hover:translate-y-0.5 transition-transform duration-300" />
@@ -163,7 +168,7 @@ const Hero = () => {
               className="flex items-center gap-6 mt-8"
             >
               <a
-                href="https://github.com/anupamkush2003"
+                href="https://github.com/Rohitkashyap-22"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300"
@@ -171,11 +176,11 @@ const Hero = () => {
                 <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
                   <FiGithub className="text-xl" />
                 </div>
-                <span className="text-sm">@anupamkush2003</span>
+                <span className="text-sm">@Rohitkashyap-22</span>
               </a>
-              
+
               <a
-                href="mailto:anupamkush8031@gmail.com"
+                href="mailto:rohitkashyap2226@gmail.com"
                 className="group flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300"
               >
                 <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
@@ -196,7 +201,7 @@ const Hero = () => {
             <div className="relative">
               {/* Outer Glow */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
-              
+
               {/* Main Image Container */}
               <motion.div
                 className="relative w-80 h-80 md:w-96 md:h-96 rounded-full border-4 border-white/20 backdrop-blur-sm bg-gradient-to-br from-white/10 to-white/5 p-1"
@@ -206,17 +211,17 @@ const Hero = () => {
                 {/* Profile Image */}
                 <div className="w-full h-full rounded-full overflow-hidden border border-white/10 bg-gray-800 flex items-center justify-center">
                   <img
-                    src="/Anupam Profile Pic.jpg"
-                    alt="Anupam Kushwaha"
+                    src="/Rohit Profile Pic.jpg"
+                    alt="Rohit Kashyap"
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
+                      e.target.style.display = "none";
+                      e.target.nextSibling.style.display = "flex";
                     }}
                   />
                   {/* Fallback Avatar */}
                   <div className="hidden w-full h-full items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-4xl font-bold">
-                    AK
+                    RK
                   </div>
                 </div>
 
@@ -248,7 +253,7 @@ const Hero = () => {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               />
-              
+
               <motion.div
                 className="absolute inset-4 rounded-full border-2 border-purple-400/30"
                 animate={{ rotate: -360 }}
