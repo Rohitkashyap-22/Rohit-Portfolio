@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.b08556df.css",
-    "main.js": "/static/js/main.9c781377.js",
-    "index.html": "/index.html",
-    "main.b08556df.css.map": "/static/css/main.b08556df.css.map",
-    "main.9c781377.js.map": "/static/js/main.9c781377.js.map"
+    "main.css": "/Rohit-Portfolio/static/css/main.b08556df.css",
+    "main.js": "/Rohit-Portfolio/static/js/main.9c781377.js",
+    "index.html": "/Rohit-Portfolio/index.html",
+    "main.b08556df.css.map": "/Rohit-Portfolio/static/css/main.b08556df.css.map",
+    "main.9c781377.js.map": "/Rohit-Portfolio/static/js/main.9c781377.js.map"
   },
   "entrypoints": [
     "static/css/main.b08556df.css",
