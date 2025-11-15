@@ -128,7 +128,6 @@ const Hero = () => {
                 <div className="text-3xl font-bold text-white mb-2">2</div>
                 <div className="text-gray-400 text-sm">Projects</div>
               </div>
-              
             </motion.div>
 
             {/* CTA Buttons */}
@@ -212,7 +211,7 @@ const Hero = () => {
                 {/* Profile Image Container */}
                 <div className="w-full h-full overflow-hidden border border-white/10 bg-gray-800 flex items-center justify-center">
                   <img
-                    src="/Rohit.jpg"
+                    src={`${process.env.PUBLIC_URL}/Rohit.jpg`}
                     alt="Rohit Kashyap"
                     className="w-full h-full object-contain"
                     onError={(e) => {

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Rohit-Portfolio/static/css/main.82bf91db.css",
+    "main.js": "/Rohit-Portfolio/static/js/main.925011f1.js",
+    "index.html": "/Rohit-Portfolio/index.html",
+    "main.82bf91db.css.map": "/Rohit-Portfolio/static/css/main.82bf91db.css.map",
+    "main.925011f1.js.map": "/Rohit-Portfolio/static/js/main.925011f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82bf91db.css",
+    "static/js/main.925011f1.js"
+  ]
+}
